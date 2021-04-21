@@ -1,3 +1,78 @@
 body {
-	background-color: #fcc4b7;
+	font-family: 'Numans', arial;
+	margin: 0;
+}
+
+header, footer {
+	background-color: #c4c4c4;
+	height: 80px;
+	text-align: center;
+	vertical-align: middle;
+	width: 100%;
+
+}
+
+header p, footer p {
+	margin: 0;
+	vertical-align: middle;
+}
+
+footer {
+	position: relative;
+	bottom: 0px;
+}
+
+main {
+	min-height: calc(100vh - 80px - 80px);
+	display: flex;
+
+}
+
+form {
+	margin: auto;
+	text-align: center;
+	color: #c4c4c4;
+	padding-bottom: 50px;
+}
+
+legend {
+	font-size: 36px;
+	color: black;
+}
+
+input {
+	font-size: 16px;
+	font-weight: bold;
+	width: 237px;
+	height: 54px;
+	border: 2px solid #c4c4c4;
+	border-radius: 12px;
+	padding-left: 15px;
+	margin-bottom: 18px;
+}
+
+button {
+	width: 110px;
+	height: 40px;
+	margin: 4px;
+	margin-top: 0px;
+	font-size: 16px;
+	font-weight: bold;
+	border: 2px solid #c4c4c4;
+	border-radius: 12px;
+	background: white;
+}
+
+button a {
+	text-decoration: none;
+	color: black;
+}
+
+.between_buttons {
+	display: inline;
+	margin: 0;
+}
+
+.a_login {
+	padding: 10px 23px;
 }
