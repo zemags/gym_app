@@ -51,8 +51,9 @@ footer a {
 }
 
 main {
-	min-height: calc(100vh - 45px - 35px - 1px - 2px);
+	min-height: calc(100vh - 45px - 35px - 1px - 2px);  /* - header - footer - header_border - footer_border*/
 	display: flex;
+	justify-content: center;
 }
 
 .form_center {
