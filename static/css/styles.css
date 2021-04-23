@@ -82,7 +82,6 @@ footer {
 footer p {
 	padding-top: 5px;
 	margin-bottom: 4px;
-	font-size: 
 }
 
 footer a {
@@ -176,10 +175,20 @@ text-align: center;
 }
 
 
-/*main page content*/
+/*main page content on index.html landing page*/
 
-.main_p {
+.main_p-landing {
 	min-width: 400px;
 	max-width: 600px;
 	padding: 10px;
+	font-size: 16px;
+	transition: 1s;
+}
+
+.main_p-landing:hover {
+	transform: scale(1.4);
+}
+
+.article_image {
+	height: 150px;
 }
