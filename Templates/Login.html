@@ -5,29 +5,32 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Log in</title>
-	<link rel="stylesheet" type="text/css" href="../Static/CSS/Styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
 </head>
 <body>
-	<header>
-		<img src="../Images/Logo.jpg" class="header_logo" alt="GumApp">
-	</header>
-	<main>
-		<div class="form_center">
-			<form method="post" action="#" name="Log_in">
-					<legend>Log In</legend>
-					<input type="text" name="login" placeholder="Login">
-					<br>
-					<input type="password" name="password" placeholder="Password">
-					<br>
-					<button type="submit" name="enter">Enter</button>
-			</form>
-			<p>First time here?</p>
-			<p>Time to <a href="Registration.html">Registration</a></p>
-		</div>
-	</main>
-	<footer>
-		<p>©Gazetdinov Azamat, Titov Ivan 2021</p>
-		<a href="#">Privacy policy</a>
-	</footer>
+	<div class="body_wrapper-width">
+		<header>
+			<a href="index.html"><img src="../images/logo.jpg" class="header_logo" alt="GumApp"></a>
+		</header>
+		<main>
+			<div class="main_login">
+				<form method="post" action="#" name="Log_in">
+						<legend>Log In</legend>
+						<input type="text" name="login" placeholder="Login">
+						<br>
+						<input type="password" name="password" placeholder="Password">
+						<br>
+						<button type="submit" name="enter">Enter</button>   <!-- can be called "Sign in" -->
+				</form>
+				<p>First time here?</p>
+				<p>Time to <a href="registration.html">Registration</a></p>
+			</div>
+			<blockquote class="main_blockquote">Short quote<cite>Author</cite></blockquote>
+		</main>
+		<footer>
+			<p>©GymApp dev team, 2021</p>
+			<a href="#">Privacy policy</a>
+		</footer>
+	</div>
 </body>
 </html>
