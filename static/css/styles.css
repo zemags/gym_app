@@ -22,7 +22,7 @@ time, mark, audio, video {
 
 body {
 	line-height: 1;
-	font-family: 'Numans', serif;
+	font-family: 'Numans', Arial, sans-serif;
 	width: 100vw;
 }
 
@@ -64,10 +64,6 @@ header {
 
 .header_login-black {
 	color: black;
-}
-
-.navigation_container {
-
 }
 
 .navigation_list {
@@ -221,10 +217,10 @@ text-align: center;
 	max-width: 600px;
 	padding: 10px;
 	font-size: 16px;
+	transition: 1s;
 }
 
 .main_p-landing:hover {
-	transition: 1s;
 	transform: scale(1.4);
 }
 
