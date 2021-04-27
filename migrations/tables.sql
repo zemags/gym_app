@@ -10,7 +10,7 @@ create table body (
   height FLOAT,
   weight FLOAT,
   body FLOAT,
-  fat_percentage FLOAT,
+  fat_percent FLOAT,
   waist FLOAT,
   arms FLOAT,
   forearm FLOAT,
