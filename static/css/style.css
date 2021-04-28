@@ -20,7 +20,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-.page {
+.page, .registration-page, .login-page {
 	line-height: 1;
 	font-family: 'Numans', Arial, sans-serif;
 }
@@ -106,8 +106,6 @@ time, mark, audio, video {
 
 
 
-
-
 /*footer*/
 
 .footer {
@@ -127,3 +125,124 @@ time, mark, audio, video {
 .footer__link {
 	color: #6e6b6b;
 }
+
+
+
+
+
+/* registration page */
+
+.header-registration {
+	border-bottom: 1px solid #1e9265;
+	height: 65px;
+	width: 100%;
+	display: flex;
+}
+
+.logo-registration-page__img {
+	width: 150px;
+	padding: 20px 0px 0px 50px;
+}
+
+.footer-registration {
+	border-top: 1px solid #006a98;
+	position: relative;
+	bottom: 0px;
+	height: 44px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-registration__text {
+	padding-top: 5px;
+	margin-bottom: 4px;
+}
+
+.footer-registration__link {
+	color: #6e6b6b;
+}
+
+.registration-page__header, .registration-page__main, .registration-page__footer {
+	margin: 0 auto;
+	max-width: 1500px;
+}
+
+.main-registration {
+	min-height: calc(100vh - 65px - 44px - 1px - 2px);  /* - header - footer - header_border - footer_border*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+/* form */
+
+.main__registration {
+	text-align: center;
+	padding-bottom: 10%;
+}
+
+.form-registration__legend {
+	font-size: 36px;
+	color: #6e6b6b;
+	margin-bottom: 20px;
+}
+
+.form-registration__input {
+	font-size: 16px;
+	width: 237px;
+	height: 40px;
+	border: 2px solid #c4c4c4;
+	border-radius: 12px;
+	padding-left: 15px;
+	margin-bottom: 18px;
+}
+
+.form-registration__button {
+	width: 252px;
+	height: 50px;
+	margin-top: 18px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #6e6b6b;
+	font-weight: bold;
+	border: 2px solid #c4c4c4;
+	border-radius: 12px;
+	background: white;
+}
+
+.form-registration__button:hover {
+	background: #e6f7fe;
+	border: 2px solid #d2f0fd;
+	color: #4487a4;
+}
+
+.registration__text {
+	margin-bottom: 15px;
+}
+
+.registration__link {
+	color: #1e9265;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* blockquote */
+
+.blockquote-registration {
+		min-width: 420px;
+		max-width: 30vw;
+		padding: 20px 10px;
+		margin-bottom: 10%;
+		text-align: center;
+		border-bottom: 2px outset #FFAA73;
+		border-top: 2px outset #FFAA73;
+	}
+	
+	.cite-registration {
+		display: block;
+		margin: 12px auto 0px;
+	text-align: center;
+	}

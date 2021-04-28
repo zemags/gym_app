@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<link href="https://allfont.ru/allfont.css?fonts=numans" rel="stylesheet" type="text/css">
 	<meta charset="UTF-8">
@@ -7,32 +8,46 @@
 	<title>Registration</title>
 	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
-<body>
-	<header>
-		<a href="index.html"><img src="../images/logo.jpg" class="header_logo" alt="GumApp"></a>
+
+<body class="registration-page">
+	<header class="header-registration registration-page__header">
+		<span class="logo-registration-page header-registration__logo">
+			<a class="logo-registration-page__link" href="index.html">
+				<img class="logo-registration-page__img" src="../images/logo.jpg" alt="GumApp">
+			</a>
+		</span>
 	</header>
-	<main>
-		<div class="main_registration">
-			<form method="post" action="#" name="reg">
-				<legend>Registration</legend>
-				<input type="text" name="username" placeholder="Username" required="">
+	<main class="main-registration registration-page__main">
+		<div class="registration main__registration">
+			<form class="form-registration registration__form" method="post" action="#" name="registration">
+				<legend class="form-registration__legend">Registration</legend>
+				<input class="form-registration__input" type="text" name="username" placeholder="Username" required="">
 				<br>
-				<input type="email" name="email" placeholder="Email" required="">
+				<input class="form-registration__input" type="email" name="email" placeholder="Email" required="">
 				<br>
-				<input type="password" name="password" placeholder="Password" required="">
+				<input class="form-registration__input" type="password" name="password" placeholder="Password" required="">
 				<br>
-				<input type="password" name="password_check" placeholder="Repeat password" required="">
+				<input class="form-registration__input" type="password" name="password_check" placeholder="Repeat password"
+					required="">
 				<br>
-				<button type="submit" name="sign_up">Sign Up</button>
+				<button class="form-registration__button" type="submit" name="sign_up">Sign Up</button>
 			</form>
-			<p>Already registered</p>
-			<a href="login.html">Log In</a> 
+			<p class="registration__text">Already registered</p>
+			<a class="registration__link" href="login.html">Log In</a>
 		</div>
-		<blockquote class="main_blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem porro optio repellat accusamus ipsam ratione incidunt aut, amet, odit veritatis facilis aperiam! Provident quos recusandae dolore nemo praesentium ducimus tenetur deleniti ipsum modi ea reiciendis ratione voluptatibus dolores animi exercitationem, vel obcaecati impedit in, amet numquam esse corrupti, a rem, consequuntur. Vero aliquid similique, libero praesentium dolorem earum expedita iste officia neque aperiam dicta ratione facere optio nam accusantium, possimus itaque rerum sit, minima deleniti magni veniam temporibus provident labore. Natus, modi in eligendi accusantium rem nulla vitae optio nostrum distinctio eius, corporis alias ab pariatur, molestias a. Quasi, pariatur.<cite>Lorem, ipsum.</cite></blockquote>
+		<blockquote class="blockquote-registration main-registration__blockquote">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+			porro optio repellat accusamus ipsam ratione incidunt aut, amet, odit veritatis facilis aperiam! Provident quos
+			recusandae dolore nemo praesentium ducimus tenetur deleniti ipsum modi ea reiciendis ratione voluptatibus dolores
+			animi exercitationem, vel obcaecati impedit in, amet numquam esse corrupti, a rem, consequuntur. Vero aliquid
+			similique, libero praesentium dolorem earum expedita iste officia neque aperiam dicta ratione facere optio nam
+			accusantium, possimus itaque rerum sit, minima deleniti magni veniam temporibus provident labore. Natus, modi in
+			eligendi accusantium rem nulla vitae optio nostrum distinctio eius, corporis alias ab pariatur, molestias a.
+			Quasi, pariatur.<cite class="cite-registration">Lorem, ipsum.</cite></blockquote>
 	</main>
-	<footer>
-		<p>©GymApp dev team, 2021</p>
-		<a href="#">Privacy policy</a>
+	<footer class="footer-registration registration-page__footer">
+		<p class="footer-registration__text">©GymApp dev team, 2021</p>
+		<a class="footer-registration__link" href="#">Privacy policy</a>
 	</footer>
 </body>
+
 </html>
