@@ -20,96 +20,95 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-body {
+.page, .registration-page, .login-page {
 	line-height: 1;
 	font-family: 'Numans', Arial, sans-serif;
-	width: 100vw;
 }
 
-.body_wrapper-width {
+
+/* header */
+
+.page__header, .page__main, .page__footer {
 	margin: 0 auto;
 	max-width: 1500px;
 }
 
-
-
-/*all for header*/
-
-header {
+.header {
 	border-bottom: 1px solid #1e9265;
 	height: 65px;
 	width: 100%;
 }
 
-.header_logo {
+
+/* logo */
+
+.header__logo {
+  float: left;
+}
+
+.logo__img {
 	width: 150px;
 	padding: 20px 0px 0px 50px;
 }
 
-.to_login {
-	margin: 23px 20px 0 0;
-	float: right;
+
+/* nav */
+
+.header__nav {
+	display: inline-block;
+  padding: 40px 0 0 5%;
 }
 
-.header_login {
-	text-decoration: none;
-	padding: 5px;
-	color: #1E7A6D;
-	border-radius: 5px;
-}
-
-.header_login-distance {
-	margin-right: 10px;
-}
-
-.header_login-black {
-	color: black;
-}
-
-.navigation_list {
-	display: inline;
-}
-
-.navigation_item {
+.nav__item {
+  font-size: 20px;
 	list-style-type: none;
 	display: inline;
 }
 
-.navigation_a {
+.nav__link {
 	text-decoration: none;
 	color: green;
 	padding: 10px;
 }
 
-.user_container {
-	margin: 23px 20px 0 0;
+
+/* user */
+
+.header__user {
+  float: right;
+  padding: 12px 25px 0 0;
+}
+
+.user {
 	float: right;
 	display: flex;
 	align-items: center;
 }
 
-.user_p {
-	display: inline;
-}
-
-.avatar-small {
+.user__avatar {
 	width: 45px;
 	border-radius: 80px;
-	display: inline;
 }
 
-.img_button-small {
+.user__btn-s {
 	width: 20px;
 	height: 20px;
-	display: inline;
 }
 
 
 
+/*all for main page*/
 
-/*all for footer*/
+.main {
+	min-height: calc(100vh - 65px - 44px - 1px - 2px);  /* - header - footer - header_border - footer_border*/
+  text-align: center;
+}
 
-footer {
+
+
+/*footer*/
+
+.footer {
 	border-top: 1px solid #006a98;
 	position: relative;
 	bottom: 0px;
@@ -118,20 +117,57 @@ footer {
 	text-align: center;
 }
 
-footer p {
+.footer__text {
 	padding-top: 5px;
 	margin-bottom: 4px;
 }
 
-footer a {
+.footer__link {
 	color: #6e6b6b;
 }
 
 
 
-/*all for main page*/
 
-main {
+
+/* registration page */
+
+.header-registration {
+	border-bottom: 1px solid #1e9265;
+	height: 65px;
+	width: 100%;
+	display: flex;
+}
+
+.logo-registration-page__img {
+	width: 150px;
+	padding: 20px 0px 0px 50px;
+}
+
+.footer-registration {
+	border-top: 1px solid #006a98;
+	position: relative;
+	bottom: 0px;
+	height: 44px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-registration__text {
+	padding-top: 5px;
+	margin-bottom: 4px;
+}
+
+.footer-registration__link {
+	color: #6e6b6b;
+}
+
+.registration-page__header, .registration-page__main, .registration-page__footer {
+	margin: 0 auto;
+	max-width: 1500px;
+}
+
+.main-registration {
 	min-height: calc(100vh - 65px - 44px - 1px - 2px);  /* - header - footer - header_border - footer_border*/
 	display: flex;
 	flex-wrap: wrap;
@@ -139,20 +175,21 @@ main {
 	align-items: center;
 }
 
-/*registration or login form*/
 
-.main_login, .main_registration {
+/* form */
+
+.main__registration {
 	text-align: center;
 	padding-bottom: 10%;
 }
 
-legend {
+.form-registration__legend {
 	font-size: 36px;
 	color: #6e6b6b;
 	margin-bottom: 20px;
 }
 
-input {
+.form-registration__input {
 	font-size: 16px;
 	width: 237px;
 	height: 40px;
@@ -162,7 +199,7 @@ input {
 	margin-bottom: 18px;
 }
 
-button {
+.form-registration__button {
 	width: 252px;
 	height: 50px;
 	margin-top: 18px;
@@ -175,69 +212,37 @@ button {
 	background: white;
 }
 
-button:hover {
+.form-registration__button:hover {
 	background: #e6f7fe;
 	border: 2px solid #d2f0fd;
 	color: #4487a4;
 }
 
-.main_login p, .main_registration p {
+.registration__text {
 	margin-bottom: 15px;
 }
 
-.main_login a, .main_registration a {
+.registration__link {
 	color: #1e9265;
 	text-decoration: none;
 	font-weight: bold;
 }
 
-/*blockquote on registration or login page*/
 
-blockquote {
-	min-width: 420px;
-	max-width: 30vw;
-	padding: 20px 10px;
-	margin-bottom: 10%;
+/* blockquote */
+
+.blockquote-registration {
+		min-width: 420px;
+		max-width: 30vw;
+		padding: 20px 10px;
+		margin-bottom: 10%;
+		text-align: center;
+		border-bottom: 2px outset #FFAA73;
+		border-top: 2px outset #FFAA73;
+	}
+	
+	.cite-registration {
+		display: block;
+		margin: 12px auto 0px;
 	text-align: center;
-	border-bottom: 2px outset #FFAA73;
-	border-top: 2px outset #FFAA73;
-}
-
-cite {
-	display: block;
-	margin: 12px auto 0px;
-text-align: center;
-}
-
-
-/*main page content on index.html landing page*/
-
-.main_p-landing {
-	min-width: 400px;
-	max-width: 600px;
-	padding: 10px;
-	font-size: 16px;
-	transition: 1s;
-}
-
-.main_p-landing:hover {
-	transform: scale(1.4);
-}
-
-.article_image {
-	height: 150px;
-}
-
-
-
-/*progress page*/
-
-.progress_wrapper {
-	display: flex;
-	border: 1px solid red;
-}
-
-.progress_img {
-	width: 350px;
-	border: 1px solid black;
-}
+	}
