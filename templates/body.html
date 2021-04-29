@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../static/css/style.css">
 </head>
-<body>
-	<div class="body_wrapper-width">
-		<header>
-			<a href="progress.html"><img src="../images/logo.jpg" class="header_logo" alt="GumApp"></a>
-			<nav>
-				<ul class="navigation">
-					<li><a href="progress.html">Progress</a></li>
-					<li><a href="body.html">Body</a></li>
-					<li><a href="exercises.html">Exercises</a></li>
-					<li><a href="meal.html">Meal</a></li>
-				</ul>
-			</nav>
-		</header>
-		<main>
-			<h1>Body</h1>
-		</main>
-		<footer>
-			<p>©GymApp dev team, 2021</p>
-			<a href="#">Privacy policy</a>
+
+<body class="page">
+	<header class="header">
+		<span class="logo header__logo">
+			<a class="logo__link" href="progress.html">
+				<img class="logo__img" src="../images/logo.jpg" alt="GumApp">
+			</a>
+		</span>
+		<nav class="nav header__nav">
+			<ul class="nav__content">
+				<li class="nav__item">
+					<a class="nav__link" href="progress.html">Progress</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link nav__link_active" href="body.html">Body</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="exercises.html">Exercises</a>
+				</li>
+				<li class="nav__item">
+					<a class="nav__link" href="meal.html">Meal</a>
+				</li>
+			</ul>
+		</nav>
+		<section class="user header__user">
+			<img class="user__avatar" src="../images/avatar.png">
+			<p class="user__name">Login</p>
+			<a href="#">
+				<img class="user__btn-s" src="../images/button_exit.png" title="logout" alt="logout">
+			</a>
+		</section>
+	</header>
+	<main class="main">
+		<h1 class="header-content main__header">Body</h1>
+		<img class="img main__img" src="../images/silhouette_man.webp" alt="Silhouette">
+		<img class="img main__img" src="../images/silhouettes_many.webp" alt="Silhouette">
+	</main>
+		<footer class="footer">
+			<p class="footer__text">©GymApp dev team, 2021</p>
+			<a class="footer__link" href="#">Privacy policy</a>
 		</footer>
-	</div>
 </body>
+
 </html>
