@@ -28,5 +28,6 @@ create table exercise_category (
 create table exercises (
   id integer unique primary key autoincrement,
   name varchar(50) not null UNIQUE,
+  image_path varchar(200),
   foreign key (exercise_category_id) REFERENCES exercise_category (id)
 )
