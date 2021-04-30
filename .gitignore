@@ -131,3 +131,6 @@ dmypy.json
 
 # Json settings
 .vscode/
+
+# Test-file
+test.html
