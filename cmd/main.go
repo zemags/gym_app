@@ -7,6 +7,7 @@ package main
 import (
 	"log"
 
+	_ "github.com/mattn/go-sqlite3"
 	"github.com/spf13/viper"
 	"github.com/zemags/gym_app"
 	"github.com/zemags/gym_app/pkg/handler"
@@ -19,7 +20,14 @@ func main() {
 		log.Fatalf("error loading configs: %s", err.Error())
 	}
 
-	repos := repository.NewRepository()
+	db, err := repository.NewSQLiteDB(repository.Config{
+		DBName: viper.GetString("db.dbname"),
+	})
+	if err != nil {
+		log.Fatalf("failed to initialize DB %s", err.Error())
+	}
+
+	repos := repository.NewRepository(db)
 	services := service.NewService(repos)
 	handlers := handler.NewHandler(services)
 

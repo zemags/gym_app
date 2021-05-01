@@ -1,1 +1,4 @@
 port : "8000"
+
+db:
+  dbname: "gymdb.db"
