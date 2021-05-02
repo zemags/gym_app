@@ -2,9 +2,10 @@ package gym_app
 
 import (
 	"context"
-	"log"
 	"net/http"
 	"time"
+
+	"github.com/sirupsen/logrus"
 )
 
 type Server struct {
@@ -12,7 +13,7 @@ type Server struct {
 }
 
 func (s *Server) Run(port string, handler http.Handler) error {
-	log.Printf("[INFO] run server on: %s", port)
+	logrus.Printf("run server on: %s", port)
 
 	s.httpServer = &http.Server{
 		Addr:           ":" + port,
