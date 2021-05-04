@@ -4,6 +4,7 @@ import (
 	"crypto/sha1"
 	"fmt"
 	"os"
+	"time"
 
 	"github.com/zemags/gym_app/pkg/repository"
 	gym_app "github.com/zemags/gym_app/store"
@@ -19,6 +20,9 @@ func NewAuthService(repo repository.Authorization) *AuthService {
 
 func (s *AuthService) CreateUser(user gym_app.User) (int, error) {
 	user.Password = generatePasswordHash(user.Password)
+	user.CreatedAt = time.Now()
+	// TODO: check if user is admin
+
 	return s.repo.CreateUser(user)
 }
 

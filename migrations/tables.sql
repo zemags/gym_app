@@ -7,6 +7,7 @@ create table users (
 create table body (
   id integer unique primary key autoincrement,
   dt datetime default CURRENT_TIMESTAMP,
+  age INTEGER,
   height FLOAT,
   weight FLOAT,
   body FLOAT,
