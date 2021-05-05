@@ -7,6 +7,7 @@ import (
 
 type Authorization interface {
 	CreateUser(user gym_app.User) (int, error)
+	GenerateToken(name, password string) (string, error)
 }
 
 type Service struct {

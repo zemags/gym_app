@@ -4,11 +4,11 @@ import "time"
 
 // User contain user-related info
 type User struct {
-	ID       uint64 `json:"-"`
+	ID       int    `json:"-" db:"id"`
 	Name     string `json:"name"  binding:"required"`
 	Email    string `json:"email"  binding:"required"`
 	Password string `json:"password"  binding:"required"`
-	Age      uint8  `json:"age"`
+	Age      int    `json:"age"`
 	Admin    bool   `json:"admin"`
 	// Admin     bool      `json:"admin"  binding:"required"`
 	Blocked   bool      `json:"blocked"`

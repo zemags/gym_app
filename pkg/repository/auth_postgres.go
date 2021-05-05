@@ -4,6 +4,7 @@ import (
 	"fmt"
 
 	"github.com/jmoiron/sqlx"
+	"github.com/sirupsen/logrus"
 	gym_app "github.com/zemags/gym_app/store"
 )
 
@@ -26,4 +27,15 @@ func (r *AuthPostgres) CreateUser(user gym_app.User) (int, error) {
 		return 0, err
 	}
 	return id, nil
+}
+
+func (r *AuthPostgres) GetUser(name, password string) (gym_app.User, error) {
+	var user gym_app.User
+
+	query := fmt.Sprintf("select id from %s where name=$1 and password_hash=$2", userTable)
+	// TODO: refactor user to username
+	err := r.db.Get(&user, query, name, password)
+	logrus.Print(query)
+	logrus.Print(err)
+	return user, err
 }
