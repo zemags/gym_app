@@ -34,8 +34,8 @@ func (s *AuthService) CreateUser(user gym_app.User) (int, error) {
 	return s.repo.CreateUser(user)
 }
 
-func (s *AuthService) GenerateToken(name, password string) (string, error) {
-	user, err := s.repo.GetUser(name, password)
+func (s *AuthService) GenerateToken(username, password string) (string, error) {
+	user, err := s.repo.GetUser(username, generatePasswordHash(password))
 	if err != nil {
 		return "", err
 	}
@@ -51,7 +51,6 @@ func (s *AuthService) GenerateToken(name, password string) (string, error) {
 		},
 	)
 	return token.SignedString([]byte(os.Getenv("SIGNING_KEY")))
-
 }
 
 func generatePasswordHash(password string) string {
