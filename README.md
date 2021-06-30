@@ -1,6 +1,6 @@
-# gym_app
-Gym Statistics Tracker App
+![GA](https://github.com/zemags/gym_app/blob/dev/frontend/images/gym_app_icon.png) Gym Statistics Tracker App
 ========================
-
-- [ ] Get yandex cloud server\pythonanywhere
-- [ ] For tracking task in project need to install [Redmine](https://www.redmine.org/projects/redmine/wiki/RedmineInstall) on remote server or simple [YouTrack](https://www.jetbrains.com/youtrack/)
+Run server
+```bash
+docker-compose up --build
+```

@@ -1,0 +1,156 @@
+@font-face {
+  font-family: 'Numans';
+  src: url(../fonts/numans_[allfont.ru].woff2) format(woff2);
+  src: url(../fonts/Numans-Regular.woff) format(woff);
+  font-weight: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i,dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family:inherit;
+  font-size:inherit;
+  font-style:inherit;
+	vertical-align: baseline;
+}
+
+.sign-page {
+	line-height: 1;
+	font-family: 'Numans', Arial, sans-serif;
+  margin: 0 auto;
+	max-width: 1500px;
+}
+
+
+/* header */
+
+.header-sign {
+	border-bottom: 1px solid #1e9265;
+	height: 65px;
+	width: 100%;
+	display: flex;
+}
+
+.header-sign__logo {
+  padding: 20px 0px 0px 50px;
+}
+
+.logo-sign-page__img {
+	width: 150px;
+}
+
+
+/* main */
+
+.main-sign {
+	min-height: calc(100vh - 65px - 66px - 1px - 2px);  /* - header - footer - header_border - footer_border*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+  text-align: center;
+}
+
+/* form */
+
+.main__sign {
+	padding-bottom: 10%;
+}
+
+.form-sign__legend {
+	font-size: 36px;
+	color: #6e6b6b;
+	margin-bottom: 20px;
+}
+
+.form-sign__input {
+	font-size: 16px;
+	width: 237px;
+	height: 40px;
+	border: 2px solid #c4c4c4;
+	border-radius: 12px;
+	padding-left: 15px;
+	margin-bottom: 18px;
+}
+
+.form-sign__button {
+	width: 252px;
+	height: 50px;
+	margin-top: 18px;
+	margin-bottom: 15px;
+	font-size: 16px;
+	color: #6e6b6b;
+	font-weight: bold;
+	border: 2px solid #c4c4c4;
+	border-radius: 12px;
+	background: white;
+}
+
+.form-sign__button:hover {
+	background: #e6f7fe;
+	border: 2px solid #d2f0fd;
+	color: #4487a4;
+}
+
+.sign__text {
+	margin-bottom: 15px;
+}
+
+.sign__link {
+	color: #1e9265;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+
+/* blockquote */
+
+.blockquote-sign {
+		min-width: 420px;
+		max-width: 30vw;
+		padding: 20px 10px;
+		margin-bottom: 10%;
+		text-align: center;
+		border-bottom: 2px outset #FFAA73;
+		border-top: 2px outset #FFAA73;
+	}
+	
+	.cite-sign {
+		display: block;
+		margin: 12px auto 0px;
+	text-align: center;
+	}
+  
+
+/* footer */
+
+.footer-sign {
+	border-top: 1px solid #006a98;
+	position: relative;
+	bottom: 0px;
+	height: 66px;
+	width: 100%;
+	text-align: center;
+}
+
+.footer-sign__text {
+	padding-top: 8px;
+	margin-bottom: 6px;
+}
+
+.footer-sign__link {
+	color: #6e6b6b;
+}
